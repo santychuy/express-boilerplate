@@ -18,7 +18,6 @@ app.use(urlencoded({ extended: false }));
 app.use(cors());
 if (NODE_ENV === 'development') app.use(morgan('dev'));
 
-//Routes
 app.use(IndexRoutes);
 
 export default app;
